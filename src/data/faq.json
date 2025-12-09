@@ -1,0 +1,53 @@
+[
+    {
+        "keywords": [
+            "hello",
+            "hi",
+            "hey",
+            "greetings"
+        ],
+        "answer": "Hello! 👋 I'm your support assistant. How can I help you today?"
+    },
+    {
+        "keywords": [
+            "hours",
+            "open",
+            "time",
+            "schedule"
+        ],
+        "answer": "We are open Monday to Friday, from 9 AM to 6 PM EST."
+    },
+    {
+        "keywords": [
+            "refund",
+            "money back",
+            "return"
+        ],
+        "answer": "Refunds are processed within 5–7 business days. You can initiate a return from your dashboard."
+    },
+    {
+        "keywords": [
+            "contact",
+            "support",
+            "email",
+            "phone"
+        ],
+        "answer": "You can reach our support team at support@example.com or call us at +1-800-555-0199."
+    },
+    {
+        "keywords": [
+            "pricing",
+            "cost",
+            "plans"
+        ],
+        "answer": "We offer three tiers: Basic ($10/mo), Pro ($29/mo), and Enterprise (Custom). Check our pricing page for details."
+    },
+    {
+        "keywords": [
+            "reset",
+            "password",
+            "forgot"
+        ],
+        "answer": "To reset your password, click 'Forgot Password' on the login page and follow the email instructions."
+    }
+]

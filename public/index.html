@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Chatbot - Premium Demo</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Content Area (To show the widget overlays content) -->
+    <div class="landing-page">
+        <header>
+            <div class="logo">G Bot</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#support" class="active">Support</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <h1>We are here to help.</h1>
+                <p>Experience our new AI-powered support assistant. Click the icon below to start.</p>
+                <button class="cta-button" onclick="toggleChat()">Chat with us</button>
+            </section>
+
+            <section id="products" class="dummy-section">
+                <h2>Our Products</h2>
+                <div class="card-grid">
+                    <div class="card">🚀 G-Bot Standard</div>
+                    <div class="card">⚡ G-Bot Pro</div>
+                    <div class="card">🏢 G-Bot Enterprise</div>
+                </div>
+            </section>
+
+            <section id="pricing" class="dummy-section">
+                <h2>Pricing Plans</h2>
+                <p>Simple, transparent pricing for everyone.</p>
+                <div class="pricing-card">
+                    <h3>Pro Plan</h3>
+                    <div class="price">$29</div>
+                    <span>per month</span>
+                </div>
+            </section>
+
+            <section id="support" class="dummy-section">
+                <h2>Support Center</h2>
+                <p>Need help? Use the chat widget or email us at support@gbot.com.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Chat Widget Container -->
+    <div class="chat-widget" id="chatWidget">
+        <!-- Chat Header -->
+        <div class="chat-header" onclick="toggleChat()">
+            <div class="header-info">
+                <div class="avatar">🤖</div>
+                <div class="title-container">
+                    <h3>Support Bot</h3>
+                    <span class="status-indicator">Online</span>
+                </div>
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-body" id="chatBody">
+            <div class="message bot-message">
+                Hello! 👋 I'm the G Bot support assistant. Ask me about hours, refunds, or pricing!
+            </div>
+            <!-- Messages will be injected here via JS -->
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Type your question..." autocomplete="off">
+            <button id="sendBtn" onclick="sendMessage()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Toggle Button (Visible when chat is closed) -->
+    <button class="chat-toggle-btn" id="chatToggleBtn" onclick="toggleChat()">
+        💬
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
